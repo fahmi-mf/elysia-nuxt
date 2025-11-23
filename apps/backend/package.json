@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build ./src/index.ts --outdir ./dist --target bun", 
+    "start": "NODE_ENV=production bun dist/index.js",
+    "auth:generate": "npx @better-auth/cli@latest generate --config ./src/auth.ts --output ./src/db/schema.ts --yes",
+    "auth:secret": "npx @better-auth/cli@latest secret",
+    "db:generate": "pnpm run auth:generate && drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@better-auth/passkey": "^1.4.1",
+    "@elysiajs/cors": "^1.4.0",
+    "@elysiajs/openapi": "^1.4.11",
+    "better-auth": "^1.4.1",
+    "drizzle-orm": "^0.44.7",
+    "elysia": "latest",
+    "nodemailer": "^7.0.10",
+    "postgres": "^3.4.7"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^7.0.4",
+    "bun-types": "latest",
+    "drizzle-kit": "^0.31.7"
+  },
+  "module": "src/index.js"
+}

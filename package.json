@@ -1,0 +1,34 @@
+{
+  "name": "elysia-nuxt",
+  "version": "1.0.0",
+  "description": "Monorepo con Elysia.js (backend) y Nuxt (frontend)",
+  "private": true,
+  "scripts": {
+    "dev": "nx run-many -t dev",
+    "build": "nx run-many -t build",
+    "test": "nx run-many -t test",
+    "start": "nx run-many -t start",
+    "dev:backend": "nx dev backend",
+    "dev:frontend": "nx dev frontend",
+    "build:backend": "nx build backend",
+    "build:frontend": "nx build frontend",
+    "graph": "nx graph"
+  },
+  "keywords": [
+    "elysia",
+    "nuxt",
+    "bun",
+    "monorepo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.22.0",
+  "devDependencies": {
+    "@nx/eslint": "22.1.1",
+    "@nx/nuxt": "22.1.1",
+    "@nx/vite": "22.1.1",
+    "eslint": "~9.39.1",
+    "nuxt": "^4.2.1",
+    "nx": "22.1.1"
+  }
+}
